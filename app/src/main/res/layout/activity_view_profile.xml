@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_person"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/round_image_bg"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/txtTotalVideos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/btnUploadVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tải lên video"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center" />
+
+</LinearLayout>

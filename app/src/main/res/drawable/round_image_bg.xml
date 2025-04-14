@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <solid android:color="#E0E0E0" /> <!-- Màu nền xám nhạt hoặc đổi sang màu khác tùy bạn -->
+
+    <stroke
+        android:width="2dp"
+        android:color="#FFFFFF" /> <!-- Viền trắng, có thể bỏ nếu không cần -->
+
+</shape>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ProgressBar
+        android:id="@+id/videoProgressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.888">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <!-- Avatar + Email nằm ngang -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical">
+
+                <!-- Avatar -->
+                <ImageView
+                    android:id="@+id/imPerson3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_person" />
+
+                <!-- Email người đăng -->
+                <TextView
+                    android:id="@+id/txtEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="email@example.com"
+                    android:textColor="@color/white"
+                    android:paddingStart="8dp"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textVideoTitle"
+                android:paddingStart="9dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:text="Video Shorts"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="15"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"/>
+            <TextView
+                android:id="@+id/textVideoDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="15"
+                android:text="Video Shorts"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/favorites"
+                android:src="@drawable/ic_favorite"
+                android:layout_gravity="end"
+                android:padding="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="18dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/tvLikeCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginTop="2dp" />
+
+
+            <ImageView
+                android:id="@+id/disfavorites2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="18dp"
+                android:padding="2dp"
+                android:src="@drawable/ic_dislike" />
+            <TextView
+                android:id="@+id/tvDisLikeCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginTop="2dp" />
+
+
+            <ImageView
+                android:id="@+id/imShare"
+                android:src="@drawable/ic_share"
+                android:layout_gravity="end"
+                android:padding="6dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="18dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:id="@+id/imMore"
+                android:src="@drawable/ic_more"
+                android:layout_gravity="end"
+                android:padding="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="18dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imPerson"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="2dp"
+        android:src="@drawable/ic_person"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/videoView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
